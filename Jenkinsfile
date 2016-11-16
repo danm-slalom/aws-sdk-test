@@ -2,7 +2,7 @@ node {
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      github 'danm-slalom/simple-maven-project-with-tests', 'master'
+      git 'https://github.com/danm-slalom/simple-maven-project-with-tests'
       mvnHome = tool 'mvn'
    }
    stage('Build') {
